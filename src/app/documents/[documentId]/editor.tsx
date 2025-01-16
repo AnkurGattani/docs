@@ -11,7 +11,7 @@ import TableRow from '@tiptap/extension-table-row'
 import Image from '@tiptap/extension-image'
 import ImageResize from 'tiptap-extension-resize-image'
 import { useEditorStore } from '@/store/use-editor-store';
-import { set } from 'date-fns';
+import Underline from '@tiptap/extension-underline'
 
 
 
@@ -52,6 +52,7 @@ export const EditorComponent = () => {
         }, 
         extensions: [
             StarterKit,
+            Underline,
             Image,
             ImageResize,
             Table, 
