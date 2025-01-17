@@ -15,6 +15,9 @@ import Underline from '@tiptap/extension-underline'
 import FontFamily from '@tiptap/extension-font-family'
 import TextStyle from '@tiptap/extension-text-style';
 
+// Custom-extensions for editing text styles
+import { FontSizeExtension } from '@/extensions/font-size';
+
 import { useLiveblocksExtension } from "@liveblocks/react-tiptap";
 import { Threads } from './threads';
 
@@ -62,6 +65,7 @@ export const EditorComponent = () => {
             }),
             FontFamily,
             TextStyle,
+            FontSizeExtension,
             Underline,
             Image,
             ImageResize,
